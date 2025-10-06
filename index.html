@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNova</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ---- General Style ---- */
+        body {
+            font-family: 'Tajawal', sans-serif; /* Font zwin l l'arabe */
+            background-color: #e8f5e9; /* Light green-ish background for comfort */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* ---- L-Cadre lkbir dyal lpage ---- */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            border: 1px solid #dcdcdc; /* Softer border */
+        }
+
+        /* ---- L3onwan lkbir (Header) ---- */
+        header h1 {
+            font-size: 2.8em; /* Kbernah bezaf bach ykoun wadeh */
+            font-weight: 700;
+            color: #388e3c; /* Green color for EduNova */
+            margin-bottom: 25px;
+            line-height: 1.3;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            font-size: 1.8em;
+            color: #5cb85c; /* Lighter green */
+            margin-bottom: 30px;
+        }
+
+        /* ---- L-Contenu ---- */
+        main p {
+            font-size: 1.2em; /* Zdna f la taille bach ykoun wadeh kter */
+            line-height: 1.8; /* Nziidoespace bin stoura */
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .features {
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between features */
+        }
+
+        .features p {
+            font-size: 1.15em;
+            background-color: #f1f8e9; /* Very light green */
+            padding: 12px 20px;
+            border-radius: 8px;
+            border-right: 5px solid #81c784; /* Green accent */
+            color: #333;
+            margin: 0;
+        }
+
+        .price {
+            font-weight: 700; /* Bold */
+            font-size: 1.5em;
+            color: #2e7d32; /* Darker green for price */
+            background-color: #c8e6c9; /* Softer green */
+            padding: 15px 25px;
+            border-radius: 10px;
+            display: inline-block; /* Bach yakhod ghir l'espace dyalo */
+            margin-top: 20px;
+        }
+
+        .goal {
+            font-style: italic;
+            color: #555;
+            background-color: #e0f2f7; /* Light blue for goal, calm */
+            padding: 18px;
+            border-left: 5px solid #4fc3f7; /* Blue accent */
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        /* ---- Footer w Social Media ---- */
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+
+        footer h3 { /* Changed from h2 to h3 for semantic structure and slightly smaller size */
+            color: #388e3c;
+            font-size: 1.9em;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .social-call-to-action {
+            font-size: 1.2em;
+            color: #424242;
+            margin-bottom: 25px;
+            font-weight: 600;
+            background-color: #fff9c4; /* Light yellow background */
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            border-bottom: 3px solid #ffeb3b;
+        }
+
+        .social-links a {
+            color: #4caf50; /* Green icons */
+            font-size: 3em; /* Nkebro les icons kter */
+            margin: 0 18px; /* Ndirou espace binathom */
+            transition: all 0.3s ease; /* Bach tbdil ykoun rtab w smooth */
+        }
+
+        /* Melli l-mouse tji fouq l'icon, loun kaytbedel w kaykber chwiya */
+        .social-links a:hover {
+            color: #2e7d32; /* Darker green f hover */
+            transform: scale(1.15); /* L'icon katkber chwiya kter */
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Shadow for pop effect */
+        }
+    </style>
+    </head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>EduNova</h1>
+            <h2>💻 دروسكم أونلاين على الحاسوب – تعلم بسهولة من دارك 📚</h2>
+        </header>
+        
+        <main>
+            <p>
+                مشروعنا يقدم دروس دعم مباشرة عبر الحاسوب (PC) في مواد الرياضيات والعلوم الطبيعية (SVT) بطريقة حديثة وسهلة الفهم.
+            </p>
+            <p>
+                كل الحصص يقدمها أساتذة محترفين بهدف مساعدتك على الفهم الجيد، وتحسين نتائجك الدراسية.
+            </p>
+
+            <div class="features">
+                <p>🕒 مواعيد مرنة تناسب الجميع</p>
+                <p>💻 الدروس مباشرة على الحاسوب بجودة عالية</p>
+                <p class="price">💰 اشتراك شهري رمزي: 90 درهم فقط</p>
+            </div>
+
+            <p class="goal">
+                هدفنا هو نوفر تجربة تعليمية حديثة وممتعة من راحتك في البيت.
+            </p>
+        </main>
+
+        <footer>
+            <h3>✨ تعلم، تطوّر، وحقق التفوق معانا! ✨</h3>
+            <p class="social-call-to-action">اضغط على أيقونة التواصل اللي بغيتي 👇</p>
+            <div class="social-links">
+                <a href="#" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
